@@ -21,50 +21,33 @@
 
 
 <h3>项目架构说明:</h3>
->|_application(应用)
->
->---|components(组件)
->
->---|config(配置文件)
->
->---|images(静态图片资源)
->
->---|pages(视图页面)
->
->---|realm(对realm操作的一些封装)
->
->---|tool(一些工具函数，中断Promise)
->
->|Interface(用于接收网络接口)
->
->---|application
->	
->-----config(配置文件)
->
->-----server(node中间层)
->
->-------|config(node配置文件)
->
->-------|controlles(路由接口控制器)
->
->-------|model(数据模型)
->
->-------|libs(静态资源库)
->
->-------|build编译后的生产环境
->
->-------app.es入口文件
->
->-------gulpfile编译es6代码
->
->------webapp（当时想尝试利用vue实现搜索页面spa通过webview嵌入应用，后来发现在控制返回键和页面操作上还是不方便，放弃了）
->使用了vuex+vue-router+webpack2+vue-cli
->
->------store(vuex的状态管理机制)
->
->(说明：因为公司项目原因，部分连接url已被注释，请自行设置)
->
->内涵打包好的apk，可以在模拟器内测试应用
+* application(应用)
+	* components(组件)
+	* config(配置文件)
+	* images(静态图片资源)
+	* pages(视图页面)
+	* realm(对realm操作的一些封装)
+	* tool(一些工具函数，中断Promise)
+
+	
+* node_ui(用于接收网络接口)
+	* application
+		* config(打包路径配置文件)
+		* server(node中间层)
+			* |config(node配置文件)
+			* controlles(路由接口控制器)
+			* model(数据模型)
+			* libs(静态资源库)
+			* build编译后的生产环境
+			* app.es入口文件
+			* gulpfile编译es6代码
+		* webapp（当时想尝试利用vue实现搜索页面spa通过webview嵌入应用，后来发现在控制返回键和页面操作上还是不方便，放弃了）
+使用了vuex+vue-router+webpack2+vue-cli
+store(vuex的状态管理机制)
+
+
+#####(说明：因为公司项目原因，部分连接url已被注释，请自行设置)
+#####内涵打包好的apk，可以在模拟器内测试应用
 
 
 

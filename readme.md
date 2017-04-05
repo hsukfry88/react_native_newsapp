@@ -21,6 +21,8 @@
 
 
 <h3>项目架构说明:</h3>
+
+
 * application(应用)
 	* components(组件)
 	* config(配置文件)

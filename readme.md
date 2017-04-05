@@ -24,12 +24,12 @@
 
 
 * application(应用)
-	* components(组件)
-	* config(配置文件)
-	* images(静态图片资源)
-	* pages(视图页面)
-	* realm(对realm操作的一些封装)
-	* tool(一些工具函数，中断Promise)
+		* components(组件)
+		* config(配置文件)
+		* images(静态图片资源)
+		* pages(视图页面)
+		* realm(对realm操作的一些封装)
+		* tool(一些工具函数，中断Promise)
 
 	
 * node_ui(用于接收网络接口)

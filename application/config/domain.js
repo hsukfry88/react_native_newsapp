@@ -1,4 +1,4 @@
-const domain = {
-	name: 'http://localhost:3000'
+const domain={
+	name:'https://bxs.ghspace.cn'
 }
 export default domain;

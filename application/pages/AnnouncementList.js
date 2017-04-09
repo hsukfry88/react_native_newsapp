@@ -10,6 +10,7 @@ import {
   ListView,
 } from 'react-native';
 import Nav from '../components/Nav';
+import ListItem from '../components/ListItem';
 import {
   HttpUrl
 } from '../config/url';
@@ -25,13 +26,8 @@ import {
 import localServer from '../config/domain';
 
 export default class extends Component {
-
   constructor(props) {
     super(props);
-    /*
-    DataSource提高listView组件性能，通过调用对象的cloneWithRows()
-    和从原数据进行逐行对比，渲染添加到旧数据尾部
-    */
     this.state = {
       start: 0,
       init: true,
@@ -94,7 +90,7 @@ export default class extends Component {
   updataDataSource(dataSource) {
       if (dataSource != undefined) {
         dataSource.length > 0 ? this._data = this._data.concat(dataSource) : this.setState({
-          nomore: false
+          nomore: true
         })
         console.log(this._data);
         this.setState({
@@ -167,7 +163,7 @@ export default class extends Component {
 
   render() {
     return (
-      <View style={[CommonStyle.container,{backgroundColor:'#eaeaea'}]}>
+      <View style={[CommonStyle.container]}>
               <PullList
                   style={{}}
                   onPullRelease={this.onPullRelease} topIndicatorRender={this.topIndicatorRender} topIndicatorHeight={60}
@@ -184,22 +180,18 @@ export default class extends Component {
     );
   }
   renderRow(item, sectionID, rowID, highlightRow) {
-      let createtime = item.startdate.split('T')[0];
-      return (
-        <TouchableOpacity onPress={() =>Actions.Announcement({
-                    id:item.id,
-                    title:item.title,
-                  })} activeOpacity={1}>
-          <View style={{flexDirection: 'column',padding:10,borderBottomColor:'#eaeaea',borderBottomWidth:1,minHeight:40,backgroundColor:'#fafafa'}}>
+    let createtime = item.startdate.split('T')[0];
+    return (
+      <ListItem title={item.title} line={2}  creatertime={createtime}   onPress = {
+                    () => Actions.Announcement({
+                      id: item.id,
+                      title: item.title
+                    })
+      }/>
+    )
+  }
 
-                  <Text style={{lineHeight:20,color:'#666'}} numberOfLines={2}>{item.title}</Text>
-                  <Text style={{textAlign:'right',color:'#ccc',fontSize:12}}>{createtime}</Text>
-             
-          </View>
-         </TouchableOpacity>
-      );
-    }
-    /*footer*/
+  /*footer*/
   renderFooter() {
     if (this.state.nomore) {
       return (

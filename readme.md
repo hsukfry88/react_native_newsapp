@@ -30,11 +30,7 @@ ios必须要支持https协议，在给我们的node配nginx反向代理时记得
 
 
  ![image](https://github.com/hsukfry88/react_native_newsapp/raw/master/exampleImage/example.jpg)
- ![image](https://github.com/hsukfry88/react_native_newsapp/raw/master/exampleImage/example01.jpg)
- ![image](https://github.com/hsukfry88/react_native_newsapp/raw/master/exampleImage/example02.jpg)
- ![image](https://github.com/hsukfry88/react_native_newsapp/raw/master/exampleImage/example03.jpg)
- ![image](https://github.com/hsukfry88/react_native_newsapp/raw/master/exampleImage/example04.jpg)
- ![image](https://github.com/hsukfry88/react_native_newsapp/raw/master/exampleImage/example05.jpg)
+ 
  
 * application(应用)
 	* components(组件)

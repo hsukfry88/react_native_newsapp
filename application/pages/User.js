@@ -20,11 +20,10 @@ import {
 import {
   Actions
 } from 'react-native-router-flux';
-import LoginStorage from '../components/Storage/LoginStorage';
 import localServer from '../config/domain';
 import ListItem from '../components/ListItem';
 
-const storageModel = new LoginStorage();
+
 class user extends Component {
   constructor(props) {
     super(props);

@@ -40,16 +40,17 @@ import {
 class SubmitInfor extends Component {
   constructor(props) {
       super(props);
+      const User = realm.getData('User', 0, 1);
       this.state = {
         announcement: realm.getData('Announcement'),
         wait: false,
         error: false,
         uid: '',
-        user: '',
-        phone: '',
-        company: '',
-        industry: '',
-        region: '',
+        user: User[0].name,
+        phone: User[0].phone,
+        company: User[0].company,
+        industry: User[0].industry,
+        region: User[0].region,
         note: '',
         userError: '',
         companyError: '',
@@ -160,7 +161,7 @@ class SubmitInfor extends Component {
           <FormLabel labelStyle ={Form.lable}>所属行业:</FormLabel>
           <View>
               <FormInput  containerStyle={Form.InputContainer} inputStyle={Form.InputStyle} onChangeText={(text)=>{this._onChangeText('industry',text,{industryError:false})}} underlineColorAndroid="transparent"maxLength={10} defaultValue={this.state.industry}/>
-              <Icon containerStyle={[Form.FormIcon,{left:22}]} type={Form.IconType} name='graduation-cap' size={16}  color={Form.InputIconColor} />
+              <Icon containerStyle={[Form.FormIcon,{left:32}]} type={Form.IconType} name='graduation-cap' size={16}  color={Form.InputIconColor} />
               { this.state.industryError ? <View style={Form.errorAlert}><Icon
               name='exclamation-circle'type={Form.IconType} color={Form.errorIconColor} size={Form.errorIconSize}/><Text style={Form.errorText}>必须为中文字符</Text></View> : null }
           </View>

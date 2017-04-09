@@ -39,17 +39,20 @@ import {
 
 class SubmitOrder extends Component {
   constructor(props) {
+
       super(props);
+      // const Login = realm.getData('Login');
+      const User = realm.getData('User', 0, 1);
       this.state = {
         announcement: realm.getData('Announcement'),
         wait: false,
         error: false,
         uid: '',
-        user: '',
-        phone: '',
-        company: '',
-        industry: '',
-        region: '',
+        user: User[0].name,
+        phone: User[0].phone,
+        company: User[0].company,
+        industry: User[0].industry,
+        region: User[0].region,
         note: '',
         userError: '',
         companyError: '',

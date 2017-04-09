@@ -14,16 +14,17 @@ import {
 import normalize from '../helps/normalize';
 let styles
 const ListItem = ({
-		title,
-		line,
-		onPress,
-		onLongPress,
-		time,
-		containerStyle
-	}) => {
-		let Component = onPress || onLongPress ? TouchableHighlight : View
-		return (
-			<Component
+	title,
+	line,
+	creatertime,
+	onPress,
+	onLongPress,
+	time,
+	containerStyle
+}) => {
+	let Component = onPress || onLongPress ? TouchableHighlight : View
+	return (
+		<Component
       onLongPress={onLongPress}
       onPress={onPress}
 			underlayColor = {
@@ -34,22 +35,12 @@ const ListItem = ({
 										<View style={styles.titleSubtitleContainer}>
 												<Text numberOfLines={line} style={{fontSize:14||normalize(14),color:'#666'}}
 								      >{title}</Text>
+								      {creatertime?<Text style={{textAlign:'right',color:'#ccc',fontSize:12}}>{creatertime}</Text>:null}
 							      </View>
 								</View>
 		</Component>
-		)
-	}
-	/*
-								      <View style={styles.chevronContainer}>
-						              <Icon
-						                type={'simple-line-icon'}
-						                iconStyle={[ styles.chevron]}
-						                size={12}
-						                name={ 'arrow-right'}
-						               	color={'#bdc6cf'}
-						              />
-						          </View>
-	*/
+	)
+}
 styles = StyleSheet.create({
 	container: {
 		paddingLeft: 7,

@@ -19,6 +19,9 @@ import {
 import {
 	HttpUrl
 } from '../config/url';
+import {
+	CommonStyle
+} from '../config/theam';
 
 class container extends Component {
 	constructor(props) {
@@ -37,9 +40,7 @@ class container extends Component {
 		}, {
 			hotPolicy: 'HotPolicy'
 		}]
-		this._left = (Dimensions.get('window').width - 90) / 2;
-		this.width = Dimensions.get('window').width;
-		this.height = Dimensions.get('window').height;
+		this._left = (screenWidth - 90) / 2;
 		this.init = this.init.bind(this);
 	}
 	async componentDidMount() {
@@ -88,11 +89,11 @@ class container extends Component {
 
 	render() {
 		return (
-			<View style={{flex:1,justifyContent:'center'}}>
+			<View style={CommonStyle.welcome}>
 				<StatusBar
           hidden={true}
         />
-				<Image style={{resizeMode: Image.resizeMode.contain,height:this.height,width:this.width}}  source={require('../images/home.jpg')}  />
+				<Image style={{resizeMode: Image.resizeMode.contain,height:screenHeight,width:screenWidth}}  source={require('../images/home.jpg')}  />
 			</View>
 		);
 	}

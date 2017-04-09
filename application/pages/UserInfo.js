@@ -62,7 +62,7 @@ class UserInfo extends Component {
     this.postData = this.postData.bind(this);
     this.saveData = this.saveData.bind(this);
   }
-  async componentDidMount() {
+  async componentWillMount() {
     const Login = realm.getData('Login');
     const User = realm.getData('User', 0, 1);
     this.setState({

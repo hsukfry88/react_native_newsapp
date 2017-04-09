@@ -28,7 +28,7 @@ const AnnouncementList = ({
 						{
 							dataSource.map((item,i)=>{
 								return (
-									<ListItem title={item.title} line={2} key={i} 	onPress = {
+									<ListItem title={item.title} line={2} key={i} onPress = {
 										() => Actions.Announcement({
 											id: item.id,
 											title: item.title

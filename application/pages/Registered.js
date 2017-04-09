@@ -164,7 +164,7 @@ class Registered extends Component {
           <FormLabel labelStyle ={Form.lable}>所属行业:</FormLabel>
           <View>
               <FormInput  containerStyle={Form.InputContainer} inputStyle={Form.InputStyle} onChangeText={(text)=>{this._onChangeText('industry',text,{industryError:false})}} underlineColorAndroid="transparent"maxLength={10} defaultValue=''/>
-              <Icon containerStyle={[Form.FormIcon,{left:22}]} type={Form.IconType} name='graduation-cap' size={16}  color={Form.InputIconColor} />
+              <Icon containerStyle={[Form.FormIcon,{left:32}]} type={Form.IconType} name='graduation-cap' size={16}  color={Form.InputIconColor} />
               { this.state.industryError ? <View style={Form.errorAlert}><Icon
               name='exclamation-circle'type={Form.IconType} color={Form.errorIconColor} size={Form.errorIconSize}/><Text style={Form.errorText}>必须为中文字符</Text></View> : null }
           </View>

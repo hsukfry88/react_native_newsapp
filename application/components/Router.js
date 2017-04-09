@@ -96,7 +96,7 @@ class NavScreen extends Component {
                   <Scene key="SearchSubmitOrder" component={SubmitOrder} title={'申报预约'}/>
                 </Scene>
                 <Scene key="SubmitNav" titleStyle={{color:'#fff'}}  navigationBarStyle={CommonStyle.theam.navigationBar}backButtonImage={require('../images/left_btn.png')}>
-                          <Scene key="SubmitInfor"  component={SubmitInfor} title={'申报预约'}  />
+                  <Scene key="SubmitInfor"  component={SubmitInfor} title={'申报预约'}/>
                 </Scene>
                 <Scene key="User"  titleStyle={{color:'#fff'}} navigationBarStyle={CommonStyle.theam.navigationBar} backButtonImage={require('../images/left_btn.png')}>
                       <Scene key="Self" name="Self" component={User} title={'个人中心'} />

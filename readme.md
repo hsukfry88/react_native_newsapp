@@ -32,8 +32,10 @@
 使用了vuex+vue-router+webpack2+vue-cli
 store(vuex的状态管理机制)
 
-用到的组件:（感谢这些无私奉献的开发者们）
 
+
+用到的组件:（感谢这些无私奉献的开发者们）
+-----------------------------------------------------------------
 <ul>
 <li>react-natice-elements(有些UI交互元素还是挺好用的)</li>
 <li>react-native-swiper(轮播图)</li>

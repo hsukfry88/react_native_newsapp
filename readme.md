@@ -1,8 +1,9 @@
 项目安装:
 ===================================
-	### 新建mysql数据库导入sql文件
-	### npm install 或使用yarn 
-	
+	### 
+			新建mysql数据库导入sql文件
+	 		npm install 或使用yarn 
+	###
 
 	[点击这里可以看到demo](https://pan.baidu.com/s/1c90xRK)
 

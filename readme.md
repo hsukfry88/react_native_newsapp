@@ -3,9 +3,7 @@
 	新建mysql数据库导入sql文件
 	npm install 或使用yarn 
 
-demo
------------------------------------
-[点击这里可以看到](https://pan.baidu.com/s/1c90xRK)
+
 
 项目架构说明:
 ------------------------------
@@ -32,6 +30,11 @@ demo
 		* webapp（当时想尝试利用vue实现搜索页面spa通过webview嵌入应用，后来发现在控制返回键和页面操作上还是不方便，放弃了）
 使用了vuex+vue-router+webpack2+vue-cli
 store(vuex的状态管理机制)
+
+Demo链接
+-----------------------------------
+[点击这里可以看到](https://pan.baidu.com/s/1c90xRK)
+
 
 
 

@@ -1,13 +1,3 @@
-项目说明:
-
-<ul>
-<li>用到的组件:（感谢这些无私奉献的开发者们）</li>
-<li>react-natice-elements(有些UI交互元素还是挺好用的)</li>
-<li>react-native-swiper(轮播图)</li>
-<li>react-native-router-flux控制路由，后期将引入redux</li>
-<li>react-native-pull(作者在listView上做了一层封装的列表，还是很好用的)</li>
-</ul>
-
 项目安装:
 ===================================
 	### 新建mysql数据库导入sql文件
@@ -41,6 +31,15 @@
 		* webapp（当时想尝试利用vue实现搜索页面spa通过webview嵌入应用，后来发现在控制返回键和页面操作上还是不方便，放弃了）
 使用了vuex+vue-router+webpack2+vue-cli
 store(vuex的状态管理机制)
+
+用到的组件:（感谢这些无私奉献的开发者们）
+
+<ul>
+<li>react-natice-elements(有些UI交互元素还是挺好用的)</li>
+<li>react-native-swiper(轮播图)</li>
+<li>react-native-router-flux控制路由，后期将引入redux</li>
+<li>react-native-pull(作者在listView上做了一层封装的列表，还是很好用的)</li>
+</ul>
 
 介绍和总结:
 -----------------------------------------------------------------

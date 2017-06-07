@@ -2,18 +2,23 @@
 ----------------------------------- 
 	
 	npm install 或使用yarn 
-	<br />
+
 	新建mysql数据库导入sql文件
-	<br />
+	
 	编译node接口文件(因为es6你懂得)
+
 	cd node-ui/application
+
 	gulp build
+
 	cd build && node app
-	<br />
+
 	测试接口地址:localhost:3000/news
+
 	node服务搭建成功后，启动react-native 
 
 	react-native run-ios(ios环境)
+
 	react0native run-android(android环境)
 
 

@@ -3,9 +3,9 @@
 	新建mysql数据库导入sql文件
 	npm install 或使用yarn 
 
-
+demo
 -----------------------------------
-[点击这里可以看到demo](https://pan.baidu.com/s/1c90xRK)
+[点击这里可以看到](https://pan.baidu.com/s/1c90xRK)
 
 项目架构说明:
 ------------------------------

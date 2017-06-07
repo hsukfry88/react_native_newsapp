@@ -5,7 +5,7 @@ import { StyleSheet, Text, View, StatusBar} from 'react-native';
 import { Icon, SocialIcon} from 'react-native-elements';
 import { Actions} from 'react-native-router-flux';
 import { dataSource} from './dataSource';
-import { Color, IconGroupTheam} from '../../config/theam';
+import { Color, IconGroupTheam, CommonStyle} from '../../config/theam';
 const IconGroup = ({extend, selected, router, actionType}) => {
     Object.assign(dataSource, extend);
     //console.log(selected);

@@ -1,4 +1,4 @@
-const domain={
-	name:'https://bxs.ghspace.cn'
+const domain = {
+    name: 'http://127.0.0.1:3000'
 }
 export default domain;

@@ -8,7 +8,7 @@
   },
   "dependencies": {
     "md5": "^2.2.1",
-    "moment": "^2.17.1",
+    "moment": "^2.29.4",
     "react": "~15.4.1",
     "react-native": "0.42.3",
     "react-native-autogrow-textinput": "^3.0.1",
